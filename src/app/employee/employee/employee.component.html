@@ -8,12 +8,19 @@
   <p>Company: {{ company.value }}</p>
 </div>
 
-<div id="modEmpData">
+<div class="modEmpData">
   <p>CHANGE COMPANY NAME</p>
   <input
     #company
     placeholder="Company Name"
     (keyup)="callCompany(company.value)"
+    [disabled]="enableInput"
   />
   <!-- <button type="button" (click)="callCompany(company.value)>Submit</button> -->
+</div>
+
+<div class="modEmpData">
+  <p>CHECK IF THE USER IS CONNECTED</p>
+  <input type="checkbox" id="regUser" [checked]="registeredUser" />
+  {{ getRegisteredUser() }}
 </div>

@@ -7,9 +7,11 @@
   font-weight: bold;
 }
 
-#modEmpData {
+.modEmpData {
   border: 1px solid black;
   margin-top: 2px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
+  font-weight: bold;
+  background-color: rosybrown;
 }
