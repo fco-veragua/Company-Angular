@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pruebaAngular';
+
+  greeting = 'Hola, soy una propiedad de la clase para SALUDAR';
 }
