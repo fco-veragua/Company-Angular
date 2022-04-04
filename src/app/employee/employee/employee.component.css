@@ -6,3 +6,10 @@
   margin-top: 2px;
   font-weight: bold;
 }
+
+#modEmpData {
+  border: 1px solid black;
+  margin-top: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}

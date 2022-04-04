@@ -1,3 +1,19 @@
 <div id="presentation">
-  <p>I am an employee!</p>
+  <h2>I am an employee!</h2>
+  <p>Name: {{ name }}</p>
+  <p>Last Name: {{ lastName }}</p>
+  <p>
+    Age: {{ age < 18 ? age + " -> MENOR DE EDAD" : age + " -> MAYOR DE EDAD" }}
+  </p>
+  <p>Company: {{ company.value }}</p>
+</div>
+
+<div id="modEmpData">
+  <p>CHANGE COMPANY NAME</p>
+  <input
+    #company
+    placeholder="Company Name"
+    (keyup)="callCompany(company.value)"
+  />
+  <!-- <button type="button" (click)="callCompany(company.value)>Submit</button> -->
 </div>
