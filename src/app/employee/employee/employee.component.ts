@@ -33,20 +33,32 @@ export class EmployeeComponent implements OnInit {
 
   registeredUser = true;
 
+  // property to know if the user is registered (string)
+
+  textToKnowRegistered = "No one is registered";
+
   /*
   getAge() {
     return this.age;
   }
   */
 
-  // function to change registeredUser status
+  // function to change registeredUser status (check)
 
   getRegisteredUser() {
     this.registeredUser = false;
 
   }
 
+  // function to create popup
 
+  setRegisteredUser(event: Event) {
+    // alert("The user has already registered!");
+
+    // this.textToKnowRegistered = "Registered User!";
+    // alert(event.target);
+    (<HTMLInputElement>event.target).value == "yes" ? this.textToKnowRegistered = "Registered User!" : this.textToKnowRegistered = "No one is registered";
+  }
 
   // function to change COMPANY NAME
 

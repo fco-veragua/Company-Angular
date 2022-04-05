@@ -21,6 +21,35 @@
 
 <div class="modEmpData">
   <p>CHECK IF THE USER IS CONNECTED</p>
-  <input type="checkbox" id="regUser" [checked]="registeredUser" />
+  <p class="regExamples">Example 1</p>
+  About Registered User: {{ textToKnowRegistered }}
+  <br />
+  <br />
+  Check:
+  <!-- <input
+    type="checkbox"
+    id="regUser"
+    [checked]="registeredUser"
+    (click)="setRegisteredUser()"
+  /> -->
   {{ getRegisteredUser() }}
+
+  <p class="regExamples">Example 2</p>
+  Registered:
+  <input
+    type="radio"
+    name="radioRegistered"
+    id="radioRegistered"
+    [checked]="registeredUser"
+    (click)="setRegisteredUser($event)"
+    value="yes"
+  /><br />
+  Not Registered:
+  <input
+    type="radio"
+    name="radioRegistered"
+    id="radioRegistered"
+    value="no"
+    (click)="setRegisteredUser($event)"
+  /><br />
 </div>
