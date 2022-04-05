@@ -23,11 +23,11 @@ export class EmployeeComponent implements OnInit {
 
   age = 23;
 
-  // company = "Berger-Levrault";
+  company = "BL";
 
   // property to activate input visibility
 
-  enableInput = true;
+  enableInput = false;
 
   // property to activate check of registered user
 
@@ -65,6 +65,12 @@ export class EmployeeComponent implements OnInit {
   callCompany(value: String) {
 
   }
+
+  // function to change COMPANY NAME X2
+
+  // changeCompany(event: Event) {
+  //   this.company = (<HTMLInputElement>event.target).value;
+  // }
 
   constructor() { }
 

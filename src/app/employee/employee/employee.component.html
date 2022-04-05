@@ -5,18 +5,19 @@
   <p>
     Age: {{ age < 18 ? age + " -> MENOR DE EDAD" : age + " -> MAYOR DE EDAD" }}
   </p>
-  <p>Company: {{ company.value }}</p>
+  <p>Company: {{ company }}</p>
 </div>
 
 <div class="modEmpData">
   <p>CHANGE COMPANY NAME</p>
-  <input
-    #company
+  <!-- <input
     placeholder="Company Name"
     (keyup)="callCompany(company.value)"
     [disabled]="enableInput"
-  />
+  /> -->
   <!-- <button type="button" (click)="callCompany(company.value)>Submit</button> -->
+
+  <input type="text" [(ngModel)]="company" />
 </div>
 
 <div class="modEmpData">
